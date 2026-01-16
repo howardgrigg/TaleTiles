@@ -1,0 +1,21 @@
+[Unit]
+Description=TaleTiles Audiobook Player
+After=multi-user.target sound.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/audiobook-player
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/pi/audiobook-player/venv/bin/python3 /home/pi/audiobook-player/player.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+# Give time for audio system to initialize
+ExecStartPre=/bin/sleep 2
+
+[Install]
+WantedBy=multi-user.target

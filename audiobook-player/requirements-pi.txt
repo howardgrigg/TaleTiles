@@ -1,0 +1,19 @@
+# TaleTiles Audiobook Player - Raspberry Pi Dependencies
+# Install with: pip3 install -r requirements-pi.txt
+
+# Audio playback via mpv
+python-mpv>=1.0.0
+
+# GPIO for Raspberry Pi
+gpiozero>=2.0
+RPi.GPIO>=0.7.0
+
+# RFID reader (RC522)
+spidev>=3.5
+mfrc522>=0.0.7
+
+# Image processing for e-ink display
+Pillow>=10.0.0
+
+# 16x2 Character LCD support (optional, for LCD1602 display)
+RPLCD>=1.3.0

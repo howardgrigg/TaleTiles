@@ -1,0 +1,13 @@
+# TaleTiles Audiobook Player Dependencies
+
+# Audio playback via mpv
+python-mpv>=1.0.0
+
+# GPIO for Raspberry Pi (install on Pi only)
+# gpiozero>=2.0
+
+# RFID reader (install on Pi only)
+# mfrc522>=0.0.7
+
+# Image processing for e-ink display
+# Pillow>=10.0.0
